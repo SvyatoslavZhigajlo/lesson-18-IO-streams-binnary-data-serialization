@@ -61,11 +61,11 @@ public class Main {
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-
-        quantityFiles();
+//            ДЗ 21 Задание 6 - Посчитать количество файлов в директории и во всех вложенных папках.
+        quantityFilesInDir();
     }
 
-    private void quantityFiles(){
+    private void quantityFilesInDir(){
         File file = new File("E:\\ОБУЧЕНИЕ\\lesson-18-IO-streams-binnary-data-serialization");
         int q = file.listFiles().length;
         System.out.println("Количество файлов в корневой папке проектов: " + q);
